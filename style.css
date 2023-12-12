@@ -1,0 +1,170 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+);
+@import url('https://fonts.googleapis.com/css?family=Mochiy Pop One');
+
+
+.text {
+    font-family: 'Mochiy Pop One';
+    font-size: 104px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 6px;
+    text-align: center;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(9, 200px);
+    gap: 10px;
+    max-height: auto;
+    min-width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.front-card {
+    border: solid black 1px;
+    width: 180px;
+    height: 190px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+.back-card {
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 180px;
+    height: 190px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.alphabet-img {
+    width: 180px;
+    height: 190px;
+    border-radius: 10px;
+
+}
+
+.flip-card {
+    width: 180px;
+    height: 190px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped {
+    transform: rotateY(180deg);
+
+}
+
+
+/* Navigation Bar*/
+
+header {
+    text-align: center;
+}
+
+.navigation-bar {
+    background-color: dodgerblue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.navigation-bar img {
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.nav-item:hover {
+    background-color: blue;
+}
+
+.nav-item p {
+    margin-top: 5px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: dodgerblue;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.footer-ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.footer-ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.sajhe-sapne-logo {
+    border-radius: 50%;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 20px;
+
+
+}
+
+.fa {
+    height: 15px;
+    width: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+
+.Follow-us {
+    margin-left: 50px;
+
+}
+
+.Follow-us a {
+    text-decoration: none;
+}
+
+.Follow-us p {
+    margin-left: 25px;
+
+}
+
+.sajhe-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+}
+
+.icons {
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        grid-template-columns: repeat(2, 200px);
+
+    }
+
+    @media (max-width: 360px) {
+        .main-container {
+            grid-template-columns: repeat(1, 200px);
+
+        }
+    }
+
+}
