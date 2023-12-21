@@ -35,8 +35,9 @@ for (let i = 65, j = 0, k = 0; i <= 90; i++, j++, k++) {
     let backCard = document.createElement("div")
     // frontCard.setAttribute("class", "front-card")
     backCard.setAttribute("class", "back-card")
-    container.appendChild(frontCard)
     container.appendChild(backCard)
+    container.appendChild(frontCard)
+
 
 
     let text = document.createElement("h1")
