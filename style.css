@@ -313,7 +313,6 @@ footer {
     .main-container {
         grid-template-columns: repeat(3, minmax(300px, 1fr));
     }
-
 }
 
 @media (min-width:1281px) {
