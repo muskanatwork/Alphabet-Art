@@ -124,7 +124,7 @@ body {
 }
 
 
-/* Navigation Bar*/
+/* This is use for Navigation Bar design*/
 
 header {
     text-align: center;
@@ -155,7 +155,7 @@ header {
 
 
 
-/* footer */
+/* This is use for footer design */
 
 footer {
     background: #1375E4;
@@ -183,8 +183,6 @@ footer {
     height: 80px;
     margin-left: 70px;
     margin-top: 20px;
-
-
 }
 
 .fa {
@@ -230,10 +228,27 @@ footer {
     text-align: center;
 }
 
+/* like icons design */
+.fa-icons::before {
+    display: none;
+}
+
+.fa-icons {
+    font-size: 1.7em;
+}
+
+.fa-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    padding-bottom: 10px;
+    color: #1F7AE0;
+}
+
+
 .pattern1 {
     color: #FF8A00;
     background-image: url(assets/pattern/pettern1.svg);
-
     background-size: 300%;
     background-color: #FFB800;
 
@@ -281,11 +296,11 @@ footer {
 }
 
 
+
 @media (min-width:320px) {
     .main-container {
         grid-template-columns: repeat(2, minmax(150px, 1fr));
     }
-
 }
 
 @media (min-width:481px) {
@@ -299,7 +314,6 @@ footer {
     .main-container {
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
-
 }
 
 @media (min-width:961px) {
