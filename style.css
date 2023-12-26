@@ -1,337 +1,473 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-);
-@import url('https://fonts.googleapis.com/css?family=Mochiy Pop One');
+@import url("https://fonts.googleapis.com/css?family=Mochiy Pop One");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* *{
+    border: 1px solid red;
+} */
 
 body {
-    background-image: url('assets/Background Pattern/Background Pattern.svg');
+  margin: 0;
+  background-image: url(./assets/bg_small.png);
 }
 
-.text {
-    font-family: 'Mochiy Pop One';
-    font-size: 104px;
-    font-weight: 400;
-    letter-spacing: 0em;
-    line-height: 6px;
-    text-align: center;
+/* Logo */
+.logo img {
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
 }
 
-/* This is for crousel */
-.dot-box {
-    text-align: center;
-    margin-top: -30px;
+/* Navigation Menu */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1375E4;
+  font-family: 'Mochiy Pop One';
+  font-weight: 400;
+  font-size: 1em;
+  color: #FFFFFF;
 }
 
-.dot {
-    display: inline-block;
-    height: 7.7px;
-    width: 8px;
-    margin: 0 2px;
-    border-radius: 50%;
-    border: 1px solid black;
-    background-color: #bbb2b2;
+nav div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  /* margin: 5px auto; */
 }
 
-.gallery-button {
-    padding: 10px;
-    border-radius: 16px;
-    background-color: #59CDFF;
-    border-bottom: 4px solid #1375E4;
-    color: white;
-    font-size: 20px;
+nav div img {
+  border-radius: 50%;
 }
 
-.Submit-entry-button {
-    margin-top: 50px;
-    background-color: #59CDFF;
-    border-bottom: 4px solid #1375E4;
-    border-radius: 16px;
-    padding: 10px;
-    color: white;
-    font-size: 20px;
+nav div p {
+  margin: 0;
 }
 
-.gallery-Div {
-    display: grid;
-    justify-content: end;
-    margin-top: 20px;
+/* Carousel */
+.carousel img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
 }
 
-.Submit-Div {
-    display: grid;
-    justify-content: center;
-    margin-top: 20px;
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
 }
 
-
-.main-container {
-    display: grid;
-    gap: 25px;
-    width: 80%;
-    margin: auto;
-    justify-content: space-around;
-    grid-template-columns: repeat(2, minmax(150px, 300px));
-    grid-template-rows: repeat(2, 1fr);
-    margin-top: 30px;
-
+.dots span {
+  display: inline-flex;
+  width: 5px;
+  height: 5px;
+  margin: 0 3px;
+  background-color: #59AFFF;
+  border-radius: 50%;
 }
 
-.front-card {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
+#dot0 {
+  background-color: white;
 }
 
-
-.back-card {
-    border-radius: 10%;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
+/* 3D button */
+.gallery {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  margin-top: 30px;
 }
 
-.alphabet-img {
-    width: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 10%;
+.call-to-action {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
 }
 
-.alphabet-word {
-    font-size: 20px;
-    font-family: 'Mochiy Pop One';
-    text-align: center;
-    color: #1375E4;
+.pushable {
+  background: #1375E4;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
 }
 
-
-.flip-card {
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    box-shadow: 0px 8px 10px 0px;
-    border-radius: 10%;
-    position: relative;
+.front {
+  display: block;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  background: #59CDFF;
+  font-family: 'Mochiy Pop One';
+  text-shadow: 0px 1px 0px #367DCA;
+  color: white;
+  transform: translateY(-6px);
 }
 
-.flip-card.flipped {
-    transform: rotateY(180deg);
-
+.pushable:active .front {
+  transform: translateY(-2px);
 }
 
-
-/* This is use for Navigation Bar design*/
-
-header {
-    text-align: center;
+/* Alphabet Cards */
+.container {
+  display: grid;
+  gap: 15px;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  grid-template-columns: repeat(2, minmax(150px, 300px));
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 30px;
 }
 
-.navigation-bar {
-    background: #1375E4;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    gap: 12px;
+.backCard {
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px solid black; */
 }
 
-.navigation-bar img {
-    margin-top: 10px;
-    border-radius: 30px;
+.backCard p {
+  text-align: center;
+  font-size: 5em;
+  font-family: 'Mochiy Pop One';
+  margin: auto;
+  text-shadow: 0px 4px 0px rgb(0, 0, 0, 0.45);
 }
 
-.nav-item:hover {
-    background-color: blue;
+.frontCard {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: 8%;
+  box-shadow: 0px 6px 30px 5px lightblue;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.nav-item p {
-    margin-top: 5px;
+.frontCard div {
+  margin: 6px 6px 0px 6px;
 }
 
-
-
-/* This is use for footer design */
-
-footer {
-    background: #1375E4;
-    height: 100%;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+.frontCard img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 8%;
+  /* border: 1px solid red; */
 }
 
-.footer-ul {
-    list-style: none;
-    margin-left: 30px;
+.frontCard p {
+  color: #1F7AE0;
+  font-family: 'Mochiy Pop One';
+  text-align: center;
+  font-size: 1.2em;
+  margin: 6px;
 }
 
-.footer-ul a {
-    text-decoration: none;
-    color: white;
-}
-
-.sajhe-sapne-logo {
-    border-radius: 50%;
-    height: 80px;
-    margin-left: 70px;
-    margin-top: 20px;
-}
-
-.fa {
-    height: 15px;
-    width: 15px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    margin-left: 20px;
-
-}
-
-.follow-us {
-    margin-left: 50px;
-
-}
-
-.follow-us a {
-    text-decoration: none;
-}
-
-.follow-us p {
-    margin-left: 25px;
-
-}
-
-.sajhe-link {
-    text-decoration: none;
-    color: white;
-    margin-left: 60px;
-}
-
-.icons {
-    margin-top: 50px;
-}
-
-.crousel {
-    height: 100%;
-    width: 100%;
-}
-
-.crousel-img {
-    text-align: center;
-}
-
-/* like icons design */
 .fa-icons::before {
-    display: none;
+  display: none;
 }
 
 .fa-icons {
-    font-size: 1.7em;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1em;
+  padding-bottom: 10px;
+  --fa-animation-iteration-count: 1;
+  color: #1F7AE0;
+
 }
 
-.fa-icons {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1em;
-    padding-bottom: 10px;
-    color: #1F7AE0;
+.card {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  border-radius: 10%;
 }
 
+.card.flipped {
+  transform: rotateY(180deg);
+}
 
+/* Design patterns for back of alphabet cards */
 .pattern1 {
-    color: #FF8A00;
-    background-image: url(assets/pattern/pettern1.svg);
-    background-size: 300%;
-    background-color: #FFB800;
-
+  background-image: url(./assets/designPatterns/pattern1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFB800;
+  border-bottom: 5px solid #BF6800;
+  color: #FF8A00;
 }
 
 .pattern2 {
-    color: #8030D4;
-    background-image: url(assets/pattern/pettern2.svg);
-    background-size: 250%;
-    background-color: #A55FEF;
+  background-image: url(./assets/designPatterns/pattern2.svg);
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-color: #A55FEF;
+  border-bottom: 5px solid #60249F;
+  color: #8030D4;
 }
 
 .pattern3 {
-    color: #1375E4;
-    background-image: url(assets/pattern/pattern3.svg);
-    background-size: 300%;
-    background-color: #59AFFF;
+  background-image: url(./assets/designPatterns/pattern3.svg);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-color: #59AFFF;
+  border-bottom: 5px solid #1375E4;
+  color: #1375E4;
 }
 
 .pattern4 {
-    color: #DA2D65;
-    background-image: url(assets/pattern/pattern4.svg);
-    background-size: 200%;
-    background-color: #F36291;
-
+  background-image: url(./assets/designPatterns/pattern4.svg);
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-color: #F36291;
+  border-bottom: 5px solid #DA2D65;
+  color: #DA2D65;
 }
 
 .pattern5 {
-    color: #D83400;
-    background-image: url(assets/pattern/pattern5.svg);
-    background-size: 150%;
-    background-color: #FF8A00;
+  background-image: url(./assets/designPatterns/pattern5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F26335;
+  border-bottom: 5px solid #D83400;
+  color: #D83400;
 }
 
 .pattern6 {
-    color: #007352;
-    background-image: url(assets/pattern/pattern6.svg);
-    background-size: 100%;
-    background-color: #36E1AE;
+  background-image: url(./assets/designPatterns/pattern6.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #36E1AE;
+  /* background-color: #1BB486;  */
+  border-bottom: 5px solid #007352;
+  color: #007352;
 }
 
-.alphabet-art-logo {
-    width: 50%;
-    height: 50%;
+/* Footer */
+footer {
+  background-color: #1375E4;
+  color: white;
+  font-size: 20px;
+  font-family: Roboto;
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
 }
 
+.social-media,
+.links {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+}
 
+.social-media {
+  padding-top: 10px;
+}
 
+.social-media ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin-top: -10px;
+}
+
+.social-media ul li {
+  margin-right: 5px;
+}
+
+.social-media ul li img {
+  border-radius: 20%;
+}
+
+.links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.links ul li {
+  margin-bottom: 15px;
+}
+
+.links ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.social-media img:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.sajhe-link-logo {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  font-family: Roboto;
+}
+
+.sajhe-link-logo img {
+  width: 15%;
+  height: 15%;
+  border-radius: 8%;
+  max-height: 100px;
+  max-width: 100px;
+  margin-top: 20px;
+}
+
+.sajhe-link-logo a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+/* Media query to change grid count and text size for different screen sizes */
 @media (min-width:320px) {
-    .main-container {
-        grid-template-columns: repeat(2, minmax(150px, 1fr));
-    }
+  .container {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  .backCard p {
+    font-size: 6.5em;
+  }
+
+  .fa-icons {
+    font-size: 1.2em;
+  }
+
+  body {
+    background-image: url(./assets/bg_small.png);
+  }
 }
 
 @media (min-width:481px) {
-    .main-container {
-        grid-template-columns: repeat(2, minmax(220px, 1fr));
-    }
+  .container {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
 
+  .backCard p {
+    font-size: 9em;
+  }
+
+  .fa-icons {
+    font-size: 1.5em;
+  }
+
+  body {
+    background-image: url(./assets/bg_small.png);
+  }
+
+  .frontCard p {
+    font-size: 25px;
+  }
 }
 
 @media (min-width:641px) {
-    .main-container {
-        grid-template-columns: repeat(2, minmax(300px, 1fr));
-    }
+  .container {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  .backCard p {
+    font-size: 13em;
+  }
+
+  body {
+    background-image: url(./assets/bg_medium.png);
+  }
+
+  .fa-icons {
+    font-size: 1.7em;
+  }
+
+  .frontCard p {
+    font-size: 25px;
+  }
 }
 
 @media (min-width:961px) {
-    .main-container {
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
-    }
+  .container {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
 
+  .backCard p {
+    font-size: 12em;
+  }
+
+  body {
+    background-image: url(./assets/bg_medium.png);
+  }
+
+  .fa-icons {
+    font-size: 1.7em;
+    padding-bottom: 10px;
+  }
+
+  .frontCard p {
+    font-size: 25px;
+  }
 }
 
 @media (min-width:1025px) {
-    .main-container {
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
-    }
+  .container {
+    grid-template-columns: repeat(3, minmax(330px, 1fr));
+  }
+
+  .backCard p {
+    font-size: 13em;
+  }
+
+  body {
+    background-image: url(./assets/bg_large.png);
+  }
+
+  .fa-icons {
+    font-size: 2em;
+    padding-bottom: 15px;
+  }
+
+  .frontCard p {
+    font-size: 30px;
+  }
 }
 
 @media (min-width:1281px) {
-    .main-container {
-        grid-template-columns: repeat(3, minmax(400px, 1fr));
-    }
+  .container {
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    gap: 20px;
+  }
 
+  .backCard p {
+    font-size: 16em;
+  }
+
+  body {
+    background-image: url(./assets/bg_large.png);
+  }
+
+  .fa-icons {
+    font-size: 2em;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+  .frontCard p {
+    font-size: 35px;
+  }
 }

@@ -4,83 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alphabet Art</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/41c3f97ee8.js" crossorigin="anonymous"></script>
+    <title>Alphabet Art</title>
 </head>
 
 <body>
     <header>
-        <!-- This is use for Alphabet logo -->
-        <img class="alphabet-art-logo" src="assets/logo/alphabet Art.jpeg" alt="alphabet Art">
-        <!-- This is use for navigation bar -->
-        <nav class="navigation-bar">
-            <div class="nav-item">
-                <img src="assets/navigation/workshop.jpeg" alt="workshop">
+        <!-- <Logo/> -->
+        <div class="logo">
+            <img src="https://placehold.co/250x100/red/white?text=Logo" alt="Logo">
+        </div>
+
+        <!-- <NavigationMenu/> -->
+        <nav>
+            <div>
+                <a href="stickers/index.html"><img src="./assets/navImages/sticker.png" alt="Stickers"></a>
+                <p>Stickers</p>
+            </div>
+            <div>
+                <a href="workshop/index.html"><img src="./assets/navImages/workshop.png" alt="Workshop"></a>
                 <p>Workshop</p>
             </div>
-            <div class="nav-item">
-                <img src="assets/navigation/contest.jpeg" alt="contest">
+            <div>
+                <a href="contest/index.html"><img src="./assets/navImages/contest.png" alt="Contest"></a>
                 <p>Contest</p>
-            </div>
-            <div class="nav-item">
-                <img src="assets/navigation/stickers.jpeg" alt="stickers">
-                <p>Stickers</p>
             </div>
         </nav>
     </header>
-    <!-- This is use for Crousel Image -->
-    <div class="crousel-img">
-        <img class="crousel" src="assets/crousel/img-1.jpeg" alt="crousel">
-    </div>
-    <div class="dot-box">
-        <span class="dot" id="dot1"></span>
-        <span class="dot" id="dot2"></span>
-        <span class="dot" id="dot3"></span>
-    </div>
-
-    <div class="gallery-Div">
-        <button class="gallery-button">Gallery</button>
-    </div>
-    <!-- Main container -->
-    <div class="main-container"></div>
-
-    <div class="Submit-Div">
-        <button class="Submit-entry-button">Submit entry</button>
-    </div>
-
-    <!-- This is use for social media icons -->
-    <footer>
-        <div class="follow-us">
-            <p>Follow us</p>
-            <a href="https://www.facebook.com/hashtag/sajhesapne/?source=feed_text&epa=HASHTAG"
-                class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/sapnewaali/" class="fa fa-instagram"></a>
-            <a href="https://www.youtube.com/channel/UC2YOf3houhn92YC2JsNhHxw/featured?view_as=subscriber"
-                class="fa fa-youtube"></a>
-            <a href="https://in.linkedin.com/company/sajhe-sapne" class="fa fa-linkedin"></a>
-            <a href="https://twitter.com/sajhesapne?lang=en" class="fa fa-twitter"></a>
+    <!-- <Carousel/> -->
+    <div class="carousel">
+        <img src="https://placehold.co/400x200/orange/white?text=Stickers" alt="Carousel Images">
+        <div class="dots">
+            <span id="dot0" class="dot"></span>
+            <span id="dot1" class="dot"></span>
+            <span id="dot2" class="dot"></span>
         </div>
+    </div>
 
-        <div class="icons">
-            <ul class="footer-ul">
-                <li class="footer-text"><a href="#">Contact us</a></li>
-                <li class="footer-text"><a href="#">Careers</a></li>
-                <li class="footer-text"><a href="#">Terms of use</a></li>
-                <li class="footer-text"><a href="#">Privacy Policy</a></li>
-                <li class="footer-text"><a href="#">Make a donation</a></li>
+    <!-- Gallery Button -->
+    <div class="gallery">
+        <button class="pushable">
+            <span class="front">Gallery</span>
+        </button>
+    </div>
+
+    <!-- <AlphabetCards/> -->
+    <div class="container">
+    </div>
+
+    <!-- Submit Your Art Button -->
+    <div class="call-to-action">
+        <button class="pushable">
+            <span class="front">Submit Your Art</span>
+        </button>
+    </div>
+
+    <!-- <Footer/> -->
+    <footer>
+        <div class="social-media">
+            <p>Follow Us</p>
+            <ul>
+                <li> <a href="https://www.facebook.com/hashtag/sajhesapne/?source=feed_text&epa=HASHTAG"><img
+                            src="./assets/social/fb.png" alt="Facebook"> </a></li>
+                <li> <a href="https://www.instagram.com/sapnewaali/"><img src="./assets/social/insta.png"
+                            alt="Instagram"></a></li>
+                <li><a href="https://www.youtube.com/channel/UC2YOf3houhn92YC2JsNhHxw?app=desktop"><img
+                            src="./assets/social/you.png" alt="Youtube"></a></li>
+                <li><a href="https://in.linkedin.com/company/sajhe-sapne"><img src="./assets/social/in.png"
+                            alt="LinkedIn"></a></li>
+                <li><a href="https://twitter.com/sajhesapne?lang=en"><img src="./assets/social/x.png" alt="X"></a></li>
             </ul>
         </div>
-        <!-- This is use for Sajhe Sapne logo -->
-        <div>
-            <img class="sajhe-sapne-logo" src="assets/logo/sajhe_sapne_logo.jpg" alt="logo">
+        <div class="links">
+            <ul>
+                <li>Contact Us</li>
+                <li>Terms Of Use</li>
+                <li>Report A Bug</li>
+                <li>Hire a Sapnewaali</li>
+                <li>Make a Donation</li>
+            </ul>
         </div>
-        <!-- There is Sajhe Sapne website Link -->
-        <div>
-            <a class="sajhe-link" href="https://sajhesapne.org/about">www.sajhesapne.org</a>
+        <div class="sajhe-link-logo">
+            <img src="assets/sajhe-logo.jpeg" alt="sajhe-spne-logo"><br>
+            <a href="https://sajhesapne.org/about" target="_blank">www.sajhesapne.org</a>
         </div>
     </footer>
-    <script src="main.js"></script>
+
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
