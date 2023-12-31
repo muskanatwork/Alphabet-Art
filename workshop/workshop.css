@@ -1,5 +1,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Mochiy Pop One");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+    margin: 0;
+}
 
 /* Logo */
 .logo img {
@@ -37,6 +42,105 @@ nav div p {
     margin: 0;
 }
 
+/* workshop image */
+.workshop-image {
+    height: 200px;
+    min-width: 200px;
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+}
+
+/* payment Confirmation heading */
+.payment {
+    color: #1375E4;
+    font-family: 'Mochiy Pop One';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.payment h1 {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Table */
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+table {
+    width: 90%;
+    min-width: 75px;
+    margin: auto;
+}
+
+.first-row {
+    background: #1375E4;
+}
+
+.second-row {
+    background: #D9EBFF;
+    color: #1375E4;
+}
+
+.second-row {
+    padding: 10px;
+    text-align: center;
+    height: 72px;
+}
+
+.th {
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.return-home {
+    width: 90%;
+    margin: auto;
+}
+
+.return-home a {
+    color: #1375E4;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sapne-waalis h2 {
+    font-family: 'Mochiy Pop One';
+    color: #1375E4;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.fa {
+    color: #1375E4;
+}
+
+.paragraph-text {
+    color: #8C97A4;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    font-family: Roboto;
+}
 
 /* Footer */
 footer {
@@ -47,6 +151,7 @@ footer {
     margin-top: 20px;
     position: absolute;
     width: 100%;
+    margin-top: 5px;
 }
 
 .social-media,
@@ -58,6 +163,10 @@ footer {
 
 .social-media {
     padding-top: 10px;
+}
+
+.social-media p {
+    margin-bottom: 25px;
 }
 
 .social-media ul {
@@ -93,97 +202,4 @@ footer {
 .social-media img:hover {
     cursor: pointer;
     opacity: 0.9;
-}
-
-
-/* Payments Confirmation */
-.workshop-image {
-    background-color: #D9EBFF;
-    ;
-    height: 200px;
-    min-width: 200px;
-    border-radius: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
-}
-
-.payment {
-    color: #1375E4;
-    font-family: 'Mochiy Pop One';
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.return-home {
-    color: #1375E4;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.return {
-    width: 90%;
-    margin: auto;
-}
-
-.text {
-    color: #8C97A4;
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-
-.payments-confirmation {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-}
-
-/* Table */
-table,
-th,
-td {
-    border-collapse: collapse;
-}
-
-.table {
-    width: 90%;
-    min-width: 90px;
-    margin: auto;
-}
-
-.tr {
-    background: #1375E4;
-}
-
-.tr2 {
-    background: #D9EBFF;
-    color: #1375E4;
-}
-
-.td {
-    padding: 20px;
-    text-align: center;
-
-}
-
-.th {
-    padding: 10px;
-    color: #FFFFFF;
-}
-
-.fa {
-    color: #1375E4;
-}
-
-.sapne-wallis {
-    font-family: 'Mochiy Pop One';
-    color: #1375E4;
-    text-align: center;
-    margin-top: 50px;
-    /* font-size: 36px; */
 }
