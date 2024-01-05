@@ -73,36 +73,25 @@ nav div p {
 }
 
 /* Table */
-table,
-th,
-td {
-    border-collapse: collapse;
-}
-
 table {
     width: 90%;
     min-width: 75px;
     margin: auto;
+    border-collapse: collapse;
 }
 
 .first-row {
     background: #1375E4;
+    color: #FFFFFF;
+    height: 40px;
 }
 
 .second-row {
     background: #D9EBFF;
     color: #1375E4;
-}
-
-.second-row {
-    padding: 10px;
+    font-family: Roboto;
     text-align: center;
     height: 72px;
-}
-
-.th {
-    padding: 10px;
-    color: #FFFFFF;
 }
 
 .return-home {
@@ -131,7 +120,7 @@ a {
 }
 
 .fa {
-    color: #1375E4;
+    color: red;
 }
 
 .paragraph-text {
