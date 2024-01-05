@@ -7,7 +7,7 @@
 }
 
 /* Logo */
-/* .logo img {
+.logo img {
     display: block;
     margin: 10px auto;
     cursor: pointer;
@@ -30,9 +30,9 @@ nav div {
     align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
-    cursor: pointer; */
+    cursor: pointer;
     /* margin: 5px auto; */
-/* }
+}
 
 nav div img {
     border-radius: 50%;
@@ -40,7 +40,7 @@ nav div img {
 
 nav div p {
     margin: 0;
-} */
+}
 
 /* workshop image */
 .workshop-image {
@@ -132,7 +132,7 @@ a {
 }
 
 /* Footer */
-/* footer {
+footer {
     background-color: #1375E4;
     color: white;
     font-size: 20px;
@@ -191,4 +191,4 @@ a {
 .social-media img:hover {
     cursor: pointer;
     opacity: 0.9;
-} */
+}
