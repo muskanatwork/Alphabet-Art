@@ -1,12 +1,6 @@
 let footer = document.getElementById("footer")
 let footerContent = 
 `
-<div id="tag">
-    <a href="https://sajhesapne.org/">
-        <span>Made with <i class="fa-solid fa-heart" style="color: #ff8787;"></i> by Sapnewaalis!</span>
-    </a>
-</div>
-
 <div id="footer-links">
     <div class="social-media">
         <span>Follow Us</span>
