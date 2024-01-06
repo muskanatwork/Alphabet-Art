@@ -12,8 +12,11 @@ body {
 /* Logo */
 .logo img {
   display: block;
-  margin: 10px auto;
-  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 143px;
+  height: 48px;
+  margin-bottom: 5px;
 }
 
 /* Navigation Menu */
@@ -37,9 +40,10 @@ nav div {
   /* margin: 5px auto; */
 }
 
-nav div:hover{
+nav div:hover {
   background-color: red;
 }
+
 nav div img {
   border-radius: 50%;
 }
@@ -271,7 +275,8 @@ footer #tag {
   color: #1375E4;
   /* border: 1px solid red; */
 }
-footer a { 
+
+footer a {
   color: inherit;
   text-decoration: none;
 }
@@ -279,6 +284,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 #footer-links {
   background-color: #1375E4;
   color: white;
@@ -289,13 +295,13 @@ footer a:hover {
   width: 100%;
 }
 
-.social-media{
+.social-media {
   width: 80%;
   margin: auto;
   margin-top: 25px;
 }
 
-.links{
+.links {
   width: 80%;
   margin: auto;
   margin-top: 25px;
@@ -331,18 +337,18 @@ footer a:hover {
   opacity: 0.9;
 }
 
-.social-media img:hover{
+.social-media img:hover {
   cursor: pointer;
   opacity: 0.9;
 }
 
 /* Workshop Page */
-.content{
+.content {
   width: 90%;
   margin: auto;
 }
 
-h1{
+h1 {
   font-family: "Mochiy Pop One";
   font-size: 20px;
   font-weight: 400;
@@ -366,11 +372,12 @@ h1{
   align-content: center;
 }
 
-.content-image p{
+.content-image p {
   margin: auto;
   color: #1375E4;
 }
-.content-image img{
+
+.content-image img {
   max-width: 100%;
   height: auto;
   margin: auto;
@@ -397,7 +404,7 @@ th {
   padding: 10px 0px 10px 0px;
 }
 
-td{
+td {
   text-align: center;
   font-family: "Roboto";
   font-weight: 400;
@@ -485,9 +492,15 @@ td{
     font-size: 25px;
   }
 
-  h1{
+  .logo img {
+    width: 336px;
+    height: 48px;
+  }
+
+  h1 {
     font-size: 24px;
   }
+
   .content p {
     font-size: 20px;
   }
@@ -527,7 +540,7 @@ td{
     font-size: 25px;
   }
 
-  h1{
+  h1 {
     font-size: 24px;
   }
 
@@ -546,7 +559,14 @@ td{
   footer #tag {
     font-size: 18px;
   }
+
+  .logo img {
+    width: 274px;
+    height: 52px;
+  }
+
 }
+
 
 @media (min-width:1025px) {
   .container {
@@ -570,11 +590,11 @@ td{
     font-size: 30px;
   }
 
-  h1{
+  h1 {
     font-size: 45px;
   }
 
-  .content p{
+  .content p {
     font-size: 26px;
   }
 
@@ -589,6 +609,12 @@ td{
   footer #tag {
     font-size: 20px;
   }
+
+  .logo img {
+    width: 274px;
+    height: 52px;
+  }
+
 }
 
 @media (min-width:1281px) {
@@ -615,11 +641,11 @@ td{
     font-size: 35px;
   }
 
-  h1{
+  h1 {
     font-size: 45px;
   }
 
-  .content p{
+  .content p {
     font-size: 26px;
   }
 
