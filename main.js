@@ -1,11 +1,11 @@
 //All words
-let words = ["Alligator","Bee","Cat",
-             "Dinosaur","Elephant","Fox",
-             "Giraffe","House","Igloo",
-             "Jellyfish","King","Ladybug",
-             "Mountains","Ninja","Octopus",
-             "Pirate","Queen","Rainbow",
-             "Strawberry", "Tree", "Unicorn",
+let words = ["Alligator","Butterfly","Cat",
+             "Dinosaur","Eagle","Flower",
+             "Giraffe","Hammer","Ice",
+             "Jellyfish","Key","Lamp",
+             "Mountains","Ninja","Omelet",
+             "Pirate","Queen","Rabbit",
+             "Snowman", "Tree", "Unicorn",
              "Volcano","Watermelon","Xylophone",
              "Yo-yo","Zebra"]
 
