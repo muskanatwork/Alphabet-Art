@@ -3,7 +3,7 @@ let footerContent =
 `
 <div id="footer-links">
     <div class="social-media">
-        <span>Follow Us</span>
+        <p>Follow Us</p>
     <ul>
         <li><img src="../assets/social/fb.png" alt="Facebook"></li>
         <li><img src="../assets/social/insta.png" alt="Instagram"></li>
