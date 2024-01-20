@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Muskan",
+        "profile" : "./galleryImage/B.png"
+    },
+    {
+        "name": "Manisha",
+        "profile":"./galleryImage/J.png"
+
+    },
+    {
+        "name": "Neha",
+        "profile":"./galleryImage/K.png"
+
+    }
+]
