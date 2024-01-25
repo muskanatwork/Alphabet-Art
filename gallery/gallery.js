@@ -8,10 +8,6 @@ for (let i = 0; i < gallery.length; i++) {
     container.appendChild(card);
 
 
-    let profile = document.createElement("img")
-    profile.setAttribute("src",gallery[i].profile)
-    profile.classList.add("profile-img")
-    card.appendChild(profile)
 
 
     let paragraph = document.createElement("div");
@@ -21,10 +17,18 @@ for (let i = 0; i < gallery.length; i++) {
 
 
 
+
+
     let imgArt = document.createElement("div");
     imgArt.classList.add("imgArt-card");
     card.appendChild(imgArt);
     // console.log(card);
+
+    let profile = document.createElement("img")
+    profile.setAttribute("src",gallery[i].profile)
+    profile.classList.add("profile-img")
+    imgArt.appendChild(profile)
+
 
 
 
