@@ -8,15 +8,10 @@ for (let i = 0; i < gallery.length; i++) {
     container.appendChild(card);
 
 
-
-
     let paragraph = document.createElement("div");
     paragraph.classList.add("paragraph-text")
     card.appendChild(paragraph)
     paragraph.innerText = gallery[i].name
-
-
-
 
 
     let imgArt = document.createElement("div");
@@ -25,11 +20,14 @@ for (let i = 0; i < gallery.length; i++) {
     // console.log(card);
 
     let profile = document.createElement("img")
-    profile.setAttribute("src",gallery[i].profile)
+    profile.setAttribute("src", gallery[i].profile)
     profile.classList.add("profile-img")
     imgArt.appendChild(profile)
 
-
+    let alphabet = document.createElement("div");
+    alphabet.classList.add("albhabet-text")
+    card.appendChild(alphabet)
+    alphabet.innerText = gallery[i].albhabetWord
 
 
     let galleryFaIcons = document.createElement("div");
@@ -49,7 +47,7 @@ for (let i = 0; i < gallery.length; i++) {
 
     // share Icons
     let share = document.createElement("i");
-    share.classList.add("fa", "fa-share-alt");
+    share.classList.add("fas", "fa-share-alt");
     galleryFaIcons.appendChild(share);
 
     likeIcon.addEventListener("click", (event) => {

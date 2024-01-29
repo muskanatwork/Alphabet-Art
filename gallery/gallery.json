@@ -1,16 +1,22 @@
 [
     {
         "name": "Ayush S ",
-        "profile" : "./galleryImage/B.png"
-    },
-    {
-        "name": "Ayush S ",
-        "profile":"./galleryImage/J.png"
+        "profile" : "./galleryImage/B.png",
+        "albhabetWord":"abc"
 
     },
     {
         "name": "Ayush S ",
-        "profile":"./galleryImage/K.png"
+        "profile":"./galleryImage/J.png",
+        "albhabetWord":"abc"
+
+
+    },
+    {
+        "name": "Ayush S ",
+        "profile":"./galleryImage/K.png",
+        "albhabetWord":"abc"
+
 
     }
 ]
